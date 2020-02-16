@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <include layout="@layout/app_bar"/>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.sscharquiz.AddActivity"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:id="@+id/thisOne"
+        android:layout_width="100dp"
+        android:layout_height="150dp" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="Name"
+            android:textSize="22sp"
+            android:gravity="center_vertical"/>
+
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:ems="10"
+            android:hint="(name)"
+            android:inputType="textPersonName"
+            android:textSize="22sp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:text="Take picture"
+            android:textColor="#FFAF91"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="@drawable/buttonshape2"
+            android:layout_marginTop="20dp" />
+
+
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:text="Choose photo"
+            android:textColor="#FFAF91"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="@drawable/buttonshape2"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/goPlayers"
+            android:text="Character list"
+            android:textColor="#FFAF91"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:onClick="goToPlayers"
+            android:background="@drawable/buttonshape2"
+            android:layout_marginTop="20dp" />
+
+
+        <Button
+            android:id="@+id/goQuiz"
+            android:text="Test your skills"
+            android:textColor="#FFAF91"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:onClick="goToQuiz"
+            android:background="@drawable/buttonshape2"
+            android:layout_marginTop="20dp" />
+
+</LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

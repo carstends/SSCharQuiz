@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sscharquiz.QuizActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+    <include layout="@layout/app_bar"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="5dp"
+        />
+
+</LinearLayout>
+    <ImageView
+        android:id="@+id/playerImage"
+        android:layout_width="255dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/guessInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        />
+
+
+    <Button
+        android:id="@+id/testAnswer"
+        android:onClick="testAnswerMethod"
+        android:text="Have a guess"
+        android:textColor="#FFAF91"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:background="@drawable/buttonshape2"
+        />
+
+
+    <Button
+        android:id="@+id/quitBtn"
+        android:onClick="goToMain"
+        android:text="Main Menu"
+        android:textColor="#FFAF91"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:background="@drawable/buttonshape2"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

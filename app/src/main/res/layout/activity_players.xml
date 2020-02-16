@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar"/>
+
+    <ListView
+    android:id="@+id/playerView"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:scrollbars="horizontal"
+    android:gravity="center">
+</ListView>
+
+    <Button
+        android:id="@+id/toAddPlayer"
+
+        android:text="Add character"
+        android:textColor="#FFAF91"
+        android:textSize="30sp"
+        android:onClick="goToAdd"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A85656"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:shadowRadius="2"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/goQuiz"
+        android:text="Test your skills"
+        android:textColor="#FFAF91"
+        android:textSize="30sp"
+        android:onClick="goToQuiz"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="22dp"
+
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A85656"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

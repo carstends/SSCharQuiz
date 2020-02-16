@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/app_bar" />
+
+
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sscharquiz.MainActivity"
+    android:gravity="center"
+    >
+
+
+    <TextView
+        android:id="@+id/owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textSize="25dp"
+        />
+
+
+    <Button
+        android:id="@+id/goPlayers"
+
+        android:text="Players"
+        android:textColor="#FFAF91"
+        android:textSize="30sp"
+        android:onClick="goToPlayers"
+
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A85656"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>
