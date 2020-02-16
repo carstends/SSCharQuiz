@@ -45,6 +45,24 @@
         android:shadowRadius="2"
         />
 
+    <Button
+        android:id="@+id/goQuiz"
+        android:text="Test your skills"
+        android:textColor="#FFAF91"
+        android:textSize="30sp"
+        android:onClick="goToQuiz"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="22dp"
+
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A85656"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        />
+
 </android.support.v7.widget.LinearLayoutCompat>
 
 </android.support.v7.widget.LinearLayoutCompat>

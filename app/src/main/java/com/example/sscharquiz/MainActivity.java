@@ -152,4 +152,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, PlayersActivity.class);
         startActivity(intent);
     }
+
+    //Navigate to QuizActivity
+    public void goToQuiz(View v){
+        Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+        startActivity(intent);
+    }
 }
